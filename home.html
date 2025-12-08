@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contenido — Tutorial Apps Móviles</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header: solo texto blanco, sin div extra -->
+  <header class="app-title">Tutorial Apps Móviles</header>
+
+  <!-- Contenedor principal -->
+  <main class="container">
+    <!-- contenedor donde temas.js inyecta las tarjetas -->
+    <section id="contenedorTemas" class="listado"></section>
+
+    <!-- Referencias: siempre abajo -->
+    <section id="refsContainer" class="card refs-card">
+      <h3>Referencias</h3>
+      <ul id="listaRefs"></ul>
+    </section>
+  </main>
+
+  <!-- Botón salir fijo al final (posición fija abajo derecha en móviles) -->
+  <button id="btnSalir" class="btn-salir">Salir</button>
+
+  <script src="auth.js"></script>
+  <script src="temas.js"></script>
+  <script src="refs.js"></script>
+
+  <!-- Registrar service worker para PWA/offline -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js').catch(e => console.log("SW:", e));
+    }
+  </script>
+</body>
+</html>

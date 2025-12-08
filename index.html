@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tutorial Apps Móviles — Login</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-title">Tutorial Apps Móviles</header>
+
+  <main class="center-card">
+    <div class="card auth-card">
+      <h2>Iniciar sesión</h2>
+      <input id="email" type="email" placeholder="Correo electrónico" />
+      <input id="password" type="password" placeholder="Contraseña" />
+      <button id="btnLogin" class="btn">Ingresar</button>
+      <p class="small">¿No tienes cuenta? <a href="register.html">Crear cuenta</a></p>
+      <p id="authMsg" class="msg"></p>
+    </div>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
