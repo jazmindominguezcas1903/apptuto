@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 8 */ {
       titulo: "h) Arquitecturas y patrones de diseño",
-      img: "diseño.jpg",
+      img: "diseno.jpg",
       contenido: `
 <p>Patrones/arquitecturas comunes: MVC, MVP, MVVM, Clean Architecture (capas: UI, domain, data).</p>
 
@@ -153,10 +153,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 10 */ {
       titulo: "j) Persistencia y acceso a datos",
-      img: "acceso datos.png",
+      img: "acceso-datos.png",
       contenido: `
 <p>Opciones locales: SharedPreferences (clave/valor), SQLite, Room (ORM para Android). Remotas: REST APIs, GraphQL, Firebase Firestore.</p>
-x
 <p><strong>Offline-first:</strong> cache local + sincronización posterior (conflictos, timestamps).</p>
 
 <p><a class="btn-info" href="https://developer.android.com/topic/libraries/architecture/room" target="_blank">Room</a></p>`
@@ -278,3 +277,4 @@ function escapeHtml(s) {
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;','/':'&#x2F;','`':'&#x60;','=':'&#x3D;'}[c];
   });
 }
+
