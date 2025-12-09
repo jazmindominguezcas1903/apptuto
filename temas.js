@@ -1,4 +1,3 @@
-// temas.js - inyecta todas las tarjetas en el orden requerido.
 // El contenedor en home.html se llama "contenedorTemas"
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 2 */ {
       titulo: "b) Aplicaciones nativas y multiplataforma",
-      img: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1350&q=80",
+      img: "nativas.png",
       contenido: `
 <p><strong>Apps nativas:</strong> Escritas para un sistema específico (Kotlin/Java para Android; Swift/ObjC para iOS). Máximo acceso al hardware y rendimiento.</p>
 
@@ -49,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 3 */ {
       titulo: "c) Hardware de dispositivos móviles",
-      img: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1350&q=80",
+      img: "mobiles.png",
       contenido: `
 <p><strong>Componentes clave:</strong> SoC (CPU + GPU + NPU), RAM, almacenamiento flash (UFS/eMMC), módem, batería, cámaras, sensores (acelerómetro, giroscopio, magnetómetro), pantallas táctiles.</p>
 
@@ -62,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 4 */ {
       titulo: "d) Lenguajes de programación de aplicaciones móviles",
-      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80",
+      img: "programacion.png",
       contenido: `
 <p>Lenguajes principales:</p>
 <ul class="lista-puntos">
@@ -85,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 5 */ {
       titulo: "e) Entornos y herramientas de desarrollo nativo",
-      img: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1350&q=80",
+      img: "herramientas.png",
       contenido: `
 <p><strong>Android Studio:</strong> IDE oficial; incluye emuladores, depurador, profiler.</p>
 <p><strong>Xcode:</strong> IDE oficial para iOS; incluye simulador, instrumentos de rendimiento.</p>
@@ -98,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 6 */ {
       titulo: "f) Diseño de interfaces de usuario utilizando controles",
-      img: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1350&q=80",
+      img: "interfaz.png",
       contenido: `
 <p>Controles comunes: botones, inputs, listas (RecyclerView/ListView), cards, menús, diálogos, switches, sliders.</p>
 
@@ -111,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 7 */ {
       titulo: "g) Guías de estilo o bibliotecas de componentes visuales para controles",
-      img: "https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1350&q=80",
+      img: "guias.png",
       contenido: `
 <p>Guías oficiales:</p>
 <ul class="lista-puntos">
@@ -154,10 +153,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* 10 */ {
       titulo: "j) Persistencia y acceso a datos",
-      img: "https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=1350&q=80",
+      img: "acceso datos.png",
       contenido: `
 <p>Opciones locales: SharedPreferences (clave/valor), SQLite, Room (ORM para Android). Remotas: REST APIs, GraphQL, Firebase Firestore.</p>
-
+x
 <p><strong>Offline-first:</strong> cache local + sincronización posterior (conflictos, timestamps).</p>
 
 <p><a class="btn-info" href="https://developer.android.com/topic/libraries/architecture/room" target="_blank">Room</a></p>`
@@ -166,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- ahora los temas que ya estaban y más información adicional
     {
       titulo: "Gestión de Sensores (habilitación, obtención y procesamiento)",
-      img: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1350&q=80",
+      img: "sensores.png",
       contenido: `
 <p>Proceso:</p>
 <ol class="lista-puntos">
@@ -180,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     {
       titulo: "Servicios y Notificaciones",
-      img: "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1350&q=80",
+      img: "notificacion.png",
       contenido: `
 <p>Servicios en Android: Foreground services (ej. reproducción audio), Background tasks (WorkManager), Push Notifications (Firebase Cloud Messaging).</p>
 <p><strong>Notificaciones:</strong> diseño de canales (Android 8+), acciones rápidas, deep links.</p>`
@@ -188,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     {
       titulo: "Proveedor de contenido, tareas en segundo plano y notificaciones (implementación)",
-      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80",
+      img: "programacion.png",
       contenido: `
 <p>Explicar: ContentProvider en Android para compartir datos entre apps; WorkManager/BackgroundTasks para trabajos periódicos; FCM para push.</p>
 
@@ -197,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     {
       titulo: "Servicios de cómputo en la nube aplicables",
-      img: "https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=1350&q=80",
+      img: "servicioscomputo.png",
       contenido: `
 <p>Ejemplos y usos:</p>
 <ul class="lista-puntos">
@@ -211,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     {
       titulo: "Librerías y toolkits para desarrollo móvil",
-      img: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=1350&q=80",
+      img: "tokens.png",
       contenido: `
 <p>Lista breve:</p>
 <ul class="lista-puntos">
@@ -224,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     {
       titulo: "Depuración y seguridad en el desarrollo de Apps",
-      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1350&q=80",
+      img: "depuracion.png",
       contenido: `
 <p>Herramientas: Logcat, Android Profiler, Instruments (iOS), breakpoints, unit/integration testing.</p>
 
@@ -233,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     {
       titulo: "Herramientas para empaquetado y despliegue",
-      img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1350&q=80",
+      img: "herramientas.png",
       contenido: `
 <p>Empaquetado:</p>
 <ul class="lista-puntos">
@@ -246,7 +245,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     {
       titulo: "Plataformas y canales de distribución",
-      img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80",
+      img:"programacion.png",
       contenido: `
 <p>Canales:</p>
 <ul class="lista-puntos">
